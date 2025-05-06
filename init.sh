@@ -3,11 +3,6 @@ echo "Initializing Laravel Code Challenge..."
 echo "Installing PHP dependencies..."
 composer install
 
-if [ ! -f .env ]; then
-  echo "Copying .env file..."
-  cp .env.example .env
-fi
-
 echo "Generating app key..."
 php artisan key:generate
 

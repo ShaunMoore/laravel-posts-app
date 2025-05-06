@@ -24,6 +24,7 @@ Create a simple Laravel application that allows users to create and view posts, 
 - Node and NPM
 - MySQL or SQLite
 - Laravel 12+
+- Laravel Valet Used to create local environment (Though any alternative is fine)
 
 ---
 
@@ -41,6 +42,15 @@ Create a simple Laravel application that allows users to create and view posts, 
 # Clone repo
 git clone https://github.com/ShaunMoore/laravel-posts-app.git
 cd laravel-posts-app
+
+# Permissions for init script
+chmod +x init.sh
+
+# Copy env
+if [ ! -f .env ]; then
+  echo "Copying .env file..."
+  cp .env.example .env
+fi
 
 # Run initial script
 ./init.sh
