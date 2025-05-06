@@ -51,6 +51,13 @@ if [ ! -f .env ]; then
   echo "Copying .env file..."
   cp .env.example .env
 fi
+```
 
-# Run initial script
+# Update your database connection details in the new .env
+# DO THIS BEFORE RUNING init.sh
+
+# Run initialise script
+
+```bash
 ./init.sh
+```
